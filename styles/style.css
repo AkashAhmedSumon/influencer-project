@@ -120,10 +120,15 @@ img.menu-icons {
 /* Logo Section Styles */
 .logo-section {
   display: flex;
+  flex-wrap: wrap;
   padding: 1.5rem 4rem;
-  justify-content: space-around;
-  border-top: 1px solid #c0ccda;
-  border-bottom: 1px solid #c0ccda;
+  justify-content: space-evenly;
+  border: 1px solid;
+  border-left: 0;
+  border-right: 0;
+  border-image: linear-gradient(to right,transparent,rgba(128, 128, 128, 0.438),transparent);
+  border-image-slice: 1;
+  margin: 6rem auto;
 }
 
 /* Popular Product Collection Section Styles */
@@ -197,12 +202,13 @@ img.menu-icons {
   width: 1rem;
   height: 1rem;
   background-color: #e44780;
+  margin-left: 0.25rem;
 }
 .arrow-icon {
   color: #e44780;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 /* =========== Features Section Styles =============*/
@@ -285,6 +291,9 @@ footer.footer-area {
   .hero-img img {
     width: 250px;
   }
+  .logo-section img {
+    padding: 1rem;
+}
   .footer-section {
     width: 100%;
   }
@@ -310,13 +319,11 @@ footer.footer-area {
     max-width: 950px;
   }
   .navbar-area,
-  ul.menu-list,
-  .logo-section{
+  ul.menu-list/* ,
+  .logo-section */{
     flex-direction: column;
   }
-  .logo-section {
-    margin-top: 1.5rem;
-  }
+  
   .logo-section img {
     width: 100px;
     margin: auto;
