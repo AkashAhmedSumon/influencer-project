@@ -7,4 +7,134 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Poppins", sans-serif;
 }
+/* btn primary */
+.btn-primary {
+  background-color: #e02c6d;
+  color: #ffffff;
+  padding: 0.8rem 1.75rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  transition: 01s;
+  -webkit-transition: 01s;
+  -moz-transition: 01s;
+  -ms-transition: 01s;
+  -o-transition: 01s;
+}
+.btn-primary:hover {
+  background-color: #e02c6ebb;
+}
+/* Main Container */
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Header Section Styles */
 
+.navbar-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+  align-items: center;
+}
+
+ul.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+ul.menu-list li {
+  list-style: none;
+}
+
+ul.menu-list a {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #3a3a3a;
+  transition: 01s;
+  -webkit-transition: 01s;
+  -moz-transition: 01s;
+  -ms-transition: 01s;
+  -o-transition: 01s;
+}
+ul.menu-list a:hover {
+  color: #e02c6d;
+}
+img.menu-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+img.menu-icons {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.hero-content {
+    max-width: 580px;
+}
+.hero-img{
+    background-image:url("../images/circle.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.hero-title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.hero-description {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
+
+
+@media screen and (max-width: 576px){
+    .main-container{
+        max-width: 550px;
+    }
+    .navbar-area,
+    ul.menu-list{
+        flex-direction: column;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-img img{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 768px){
+    .main-container{
+        max-width: 740px;
+    }
+    .navbar-area,
+    ul.menu-list{
+        flex-direction: column;
+    }
+    .hero-section{
+        text-align: center;
+        flex-direction: column-reverse;
+        
+    }
+}
